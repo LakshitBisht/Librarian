@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Member_Dashboard</class>
+ <widget class="QMainWindow" name="Member_Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">Member_Dashboard
+{
+border-image:url(:/img/images/bg1.png);
+}
+
+QPushButton
+{
+color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+background: transparent;
+border:none;
+border-bottom: 1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255)); 
+}
+
+QPushButton:hover
+{
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+background:transparent;
+border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+border-radius: 15px;
+}
+
+QPushButton:pressed
+{
+color:white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+border:none;
+border-radius: 15px;
+}
+
+#toolButton_MainIcon
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 161, 29, 255), stop:0.134831 rgba(255, 110, 62, 255), stop:0.230337 rgba(255, 81, 105, 255), stop:0.342697 rgba(255, 28, 174, 255), stop:0.466292 rgba(193, 0, 197, 255), stop:0.589888 rgba(212, 0, 255, 255), stop:0.764045 rgba(171, 14, 223, 255), stop:0.955056 rgba(101, 14, 223, 255));
+border-radius: 60px;
+}
+#frame_top_4
+{
+background-color: rgba(0, 0, 0, 0.8);
+border-radius:none;
+}
+#frame_left
+{
+background-color: rgba(0, 0, 0, 0.8);
+border-radius:0px;;
+}
+#stackedWidget_Member
+{
+background: rgba(0,0,0,0.8);
+}
+#pushButton_Logout
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.0617978 rgba(255, 103, 156, 255), stop:0.365169 rgba(255, 0, 255, 255), stop:0.685393 rgba(171, 14, 223, 255), stop:1 rgba(85, 0, 138, 255));
+color:white;
+font: 75 18pt &quot;Century Gothic&quot;;
+border:none;
+border-radius: 20px;
+}
+#pushButton_Logout:hover
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 0, 138, 255), stop:0.342697 rgba(171, 14, 223, 255), stop:0.662921 rgba(255, 0, 255, 255), stop:1 rgba(255, 103, 156, 255));
+color:black;
+font: 75 18pt &quot;Century Gothic&quot;;
+border:none;
+border-radius: 20px;
+}
+#pushButton_Logout:pressed
+{
+background-color:transparent;
+color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 0, 138, 255), stop:0.342697 rgba(171, 14, 223, 255), stop:0.662921 rgba(255, 0, 255, 255), stop:1 rgba(255, 103, 156, 255));
+font:75 18pt &quot;Century Gothic&quot;;
+border:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(85, 0, 138, 255), stop:0.342697 rgba(171, 14, 223, 255), stop:0.662921 rgba(255, 0, 255, 255), stop:1 rgba(255, 103, 156, 255));
+border-radius:20px;
+}
+#label_Profession
+{
+background:transparent;
+color:white;
+}
+#label_UID
+{
+background:transparent;
+color:white;
+}
+#label_Name
+{
+background:transparent;
+color:white;
+}
+#label_Member
+{
+background:transparent;
+	color: rgb(170, 170, 255);
+}
+#toolButton_messages
+{
+background-color:transparent;
+}
+
+#toolButton_issueLog
+{
+background-color:transparent;
+}
+#toolButton_issueLog:hover
+{
+border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-radius:10px;
+}
+#toolButton_messages:hover
+{
+border-top:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-bottom:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-radius:10px;
+}
+#toolButton_issueLog:pressed
+{
+border:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-radius:10px;
+}
+#toolButton_messages:pressed
+{
+border:1px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(171, 14, 223, 255), stop:1 rgba(255, 81, 105, 255));
+border-radius:10px;
+}
+
+QMessageBox
+{
+color:rgb(170, 170, 255);
+background-image:url(:/img/images/messagebox.jpg);
+}
+
+QMessageBox QPushButton
+{	
+color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.303371 rgba(255, 28, 174, 255), stop:0.608939 rgba(193, 0, 197, 255), stop:0.787709 rgba(212, 0, 255, 255), stop:0.966292 rgba(171, 14, 223, 255));
+font: 12pt &quot;Century Gothic&quot;;
+background-color: transparent;
+border: 1px solid qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+border-radius: 10px;
+min-height:20px;
+}
+
+QMessageBox QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.303371 rgba(255, 28, 174, 255), stop:0.608939 rgba(193, 0, 197, 255), stop:0.787709 rgba(212, 0, 255, 255), stop:0.966292 rgba(171, 14, 223, 255));
+color:white;
+font: 12pt &quot;Century Gothic&quot;;
+}
+QMessageBox QLabel
+{
+color:white;
+background:transparent;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_left">
+      <property name="minimumSize">
+       <size>
+        <width>221</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>221</width>
+        <height>1500</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_16">
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_Member">
+           <property name="font">
+            <font>
+             <family>Century Gothic</family>
+             <pointsize>22</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Member
+Dashboard</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <spacer name="horizontalSpacer_16">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_MainIcon">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>121</width>
+                 <height>121</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>121</width>
+                 <height>121</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Resources.qrc">
+                 <normaloff>:/img/images/admin_signup_icon.png</normaloff>:/img/images/admin_signup_icon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>80</width>
+                 <height>80</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_17">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <spacer name="horizontalSpacer_18">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Preferred</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>35</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_18">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_Name">
+                 <property name="minimumSize">
+                  <size>
+                   <width>151</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>151</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Century Gothic</family>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Test User</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_UID">
+                 <property name="minimumSize">
+                  <size>
+                   <width>151</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>151</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Century Gothic</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>UID</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_Profession">
+                 <property name="minimumSize">
+                  <size>
+                   <width>151</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>151</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Century Gothic</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Profession</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_19">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>35</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>60</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_19">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <property name="leftMargin">
+              <number>35</number>
+             </property>
+             <property name="rightMargin">
+              <number>35</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="pushButton_AccountDetails">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>151</width>
+                 <height>31</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Century Gothic</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>View and Update your account details...</string>
+               </property>
+               <property name="text">
+                <string>Account Details</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_allBooks">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>151</width>
+                 <height>31</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Century Gothic</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>View all books in the Library</string>
+               </property>
+               <property name="toolTipDuration">
+                <number>-1</number>
+               </property>
+               <property name="text">
+                <string>All Books</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_currentlyIssued">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>151</width>
+                 <height>31</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Century Gothic</family>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>View the books currently issued to you</string>
+               </property>
+               <property name="text">
+                <string>Currently Issued</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>100</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_Logout">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>218</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Logout</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_20">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_top_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>700</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QToolButton" name="toolButton_messages">
+           <property name="minimumSize">
+            <size>
+             <width>51</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>51</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Recieved messages</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="Resources.qrc">
+             <normaloff>:/img/images/withApplication2.png</normaloff>:/img/images/withApplication2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_20">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>927</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_issueLog">
+           <property name="minimumSize">
+            <size>
+             <width>51</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>51</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Log of all books issued till date</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="Resources.qrc">
+             <normaloff>:/img/images/log.png</normaloff>:/img/images/log.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget_Member">
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="page_accountDetails_4"/>
+        <widget class="QWidget" name="page_memberDetails_4"/>
+        <widget class="QWidget" name="page_bookDetails_4"/>
+        <widget class="QWidget" name="page_issuedBooks_4"/>
+        <widget class="QWidget" name="page_sendMssg_4"/>
+        <widget class="QWidget" name="page_adminApplication_4"/>
+        <widget class="QWidget" name="page_registerLog_4"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

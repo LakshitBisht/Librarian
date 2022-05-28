@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminApplication</class>
+ <widget class="QWidget" name="AdminApplication">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton
+{
+color: white;
+background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0.00561798 rgba(69, 0, 103, 255), stop:0.134831 rgba(87, 0, 129, 255), stop:0.297753 rgba(110, 0, 165, 255), stop:0.550562 rgba(117, 0, 117, 255), stop:0.674157 rgba(124, 0, 124, 255), stop:0.837079 rgba(140, 0, 140, 255), stop:0.977528 rgba(172, 0, 172, 255));
+border-radius: 16px;
+}
+
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.494, stop:0 rgba(244, 86, 139, 255), stop:0.393258 rgba(255, 0, 255, 255), stop:0.758427 rgba(162, 21, 232, 255), stop:1 rgba(69, 0, 103, 255));
+color: black;
+}
+
+QGroupBox
+{
+background-color:transparent;
+}
+
+QGroupBox::title
+{
+color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 161, 29, 255), stop:0.134831 rgba(255, 110, 62, 255), stop:0.230337 rgba(255, 81, 105, 255), stop:0.342697 rgba(255, 28, 174, 255), stop:0.466292 rgba(193, 0, 197, 255), stop:0.589888 rgba(212, 0, 255, 255), stop:0.764045 rgba(171, 14, 223, 255), stop:0.955056 rgba(101, 14, 223, 255));
+}
+
+QTableView
+{
+color:white;
+background-color: rgba(46, 47, 48,0.5);
+gridline-color:rgb(129, 129, 129);
+font: 11pt &quot;Century Gothic&quot;;
+}
+
+QTableView::item:focus
+{
+background:  qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0.00561798 rgba(69, 0, 103, 255), stop:0.134831 rgba(87, 0, 129, 255), stop:0.297753 rgba(110, 0, 165, 255), stop:0.550562 rgba(117, 0, 117, 255), stop:0.674157 rgba(124, 0, 124, 255), stop:0.837079 rgba(140, 0, 140, 255), stop:0.977528 rgba(172, 0, 172, 255));
+font: 11pt &quot;Century Gothic&quot;;
+color: white;
+}
+
+QHeaderView
+{
+background-color: rgb(64, 65, 66);
+font: 75 11pt &quot;Century Gothic&quot;;
+color:rgb(203, 203, 203);
+min-height:40px;
+min-height:40px;
+}
+
+QHeaderView::section 
+{
+background-color: rgb(64, 65, 66);
+border:none;
+}
+
+QTableView QTableCornerButton::section 
+{
+background-color: rgb(64, 65, 66);
+}
+QScrollBar:vertical
+{
+background: rgb(46, 47, 48);
+}
+QScrollBar::handle:vertical
+{
+background: rgb(79, 80, 81);
+}
+QScrollBar::add-page:vertical 
+{
+background:rgb(46, 47, 48);
+}
+QScrollBar::sub-page:vertical
+{
+background:rgb(46, 47, 48);
+}
+
+#lineEdit_searchBar
+{
+background: transparent;
+border: none;
+color: #717072;
+border-bottom : 1px solid qlineargradient(spread:pad, x1:0, y1:0.477, x2:1, y2:0.471591, stop:0 rgba(255, 141, 103, 255), stop:0.235955 rgba(255, 103, 156, 255), stop:0.567416 rgba(255, 0, 255, 255), stop:0.780899 rgba(171, 14, 223, 255), stop:1 rgba(85, 0, 138, 255));
+}
+
+QComboBox
+{
+background: transparent;
+border: none;
+color: #717072;
+border-bottom : 1px solid qlineargradient(spread:pad, x1:0, y1:0.477, x2:1, y2:0.471591, stop:0 rgba(255, 141, 103, 255), stop:0.235955 rgba(255, 103, 156, 255), stop:0.567416 rgba(255, 0, 255, 255), stop:0.780899 rgba(171, 14, 223, 255), stop:1 rgba(85, 0, 138, 255));
+}
+
+QComboBox QAbstractItemView::item 
+{ 
+height: 40px;
+color: #717072;
+background:  rgb(38,38,38);
+} 
+
+QComboBox QAbstractItemView::item:selected 
+{ 
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.303371 rgba(255, 28, 174, 255), stop:0.608939 rgba(193, 0, 197, 255), stop:0.787709 rgba(212, 0, 255, 255), stop:0.966292 rgba(171, 14, 223, 255));
+color: white;
+} 
+
+#label_search
+{
+border-bottom : 1px solid rgb(255, 103, 156);
+background-color:transparent;
+}
+QMessageBox
+{
+background-image:url(:/img/images/messagebox.jpg);
+font: 9pt &quot;Century Gothic&quot;;
+color:white;
+}
+
+QMessageBox QPushButton
+{	
+color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.303371 rgba(255, 28, 174, 255), stop:0.608939 rgba(193, 0, 197, 255), stop:0.787709 rgba(212, 0, 255, 255), stop:0.966292 rgba(171, 14, 223, 255));
+font: 12pt &quot;Century Gothic&quot;;
+background-color: transparent;
+border: 1px solid qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.966292 rgba(171, 14, 223, 255));
+border-radius: 10px;
+height: 20px;
+width: 50px;
+}
+
+QMessageBox QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0 rgba(255, 81, 105, 255), stop:0.303371 rgba(255, 28, 174, 255), stop:0.608939 rgba(193, 0, 197, 255), stop:0.787709 rgba(212, 0, 255, 255), stop:0.966292 rgba(171, 14, 223, 255));
+color:white;
+font: 12pt &quot;Century Gothic&quot;;
+}
+QMessageBox QLabel
+{
+color:white;
+background:transparent;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_adminApplication">
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Admin Applications</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="verticalSpacing">
+       <number>10</number>
+      </property>
+      <item row="0" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_search">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="placeholderText">
+           <string>Search by</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>50</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_search">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/img/images/search.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_searchBar</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_searchBar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Century Gothic</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="placeholderText">
+           <string>Search</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QTableView" name="tableView_adminApplication">
+        <property name="font">
+         <font>
+          <family>Century Gothic</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_applicationAccept">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Century Gothic</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Accept</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton_applicationReject">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Century Gothic</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Reject</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
